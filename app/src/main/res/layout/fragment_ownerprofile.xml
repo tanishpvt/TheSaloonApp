@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/info"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="     Personal Information"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginHorizontal="15dp"
+        android:drawableRight="@drawable/ic_mode_edit_black_24dp"
+        android:textAlignment="center"
+        android:textColor="#000000"/>
+    <View
+        android:id="@+id/line"
+        android:layout_below="@id/info"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginHorizontal="97dp"
+        android:background="#000000"/>
+    <EditText
+        android:id="@+id/fname"
+        android:layout_below="@id/line"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_person_grey_24dp"
+        android:padding="10dp"
+        android:inputType="none"
+        android:hint="  First Name"/>
+    <EditText
+        android:id="@+id/Lname"
+        android:layout_below="@id/fname"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_person_grey_24dp"
+        android:padding="10dp"
+        android:inputType="none"
+        android:hint="  Last Name"/>
+    <EditText
+        android:id="@+id/shopname"
+        android:layout_below="@id/Lname"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_content_cut_grey_24dp"
+        android:padding="10dp"
+        android:inputType="none"
+        android:hint="  Shop Name"/>
+    <EditText
+        android:id="@+id/email"
+        android:layout_below="@id/shopname"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:padding="10dp"
+        android:inputType="none"
+        android:hint="  Email"/>
+    <EditText
+        android:id="@+id/number"
+        android:layout_below="@id/email"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+        android:padding="10dp"
+        android:inputType="none"
+        android:hint="  Mobile Number"/>
+    <EditText
+        android:id="@+id/ShopOpeningTime"
+        android:layout_below="@id/number"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_timer_black_24dp"
+        android:padding="10dp"
+        android:inputType="none"
+        android:hint="  Shop Opening Time"/>
+    <EditText
+        android:id="@+id/ShopClosingTime"
+        android:layout_below="@id/ShopOpeningTime"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_timer_off_black_24dp"
+        android:padding="10dp"
+        android:inputType="none"
+        android:hint="  Shop Closing Time"/>
+</RelativeLayout>

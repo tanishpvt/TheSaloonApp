@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:background="@color/background"
+    tools:context=".SaloonList">
+
+    <LinearLayout
+        android:id="@+id/list_top"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:clickable="false"
+        android:focusable="false">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/sa2"
+            android:clickable="false"
+            android:focusable="false"/>
+
+        <TextView
+            android:id="@+id/saloonname"
+            android:layout_width="200dp"
+            android:fontFamily="@font/caveat_brush"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="17dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="Special Saloon"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <View
+        android:id="@+id/line"
+        android:layout_below="@id/list_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginHorizontal="8dp"
+        android:background="#c2c0c0"
+        android:clickable="false"
+        android:focusable="false"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fees"
+        android:layout_below="@id/line"
+        android:clickable="false"
+        android:focusable="false">
+        <TextView
+            android:id="@+id/paymenttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Average Fees: "
+            android:textSize="14dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:clickable="false"
+            android:focusable="false"/>
+        <TextView
+            android:id="@+id/paymentfees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="80 Rs."
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:clickable="false"
+            android:focusable="false"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/belowline"
+        android:layout_below="@id/fees"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="7dp"
+        android:background="#c2c0c0"
+        android:clickable="false"
+        android:focusable="false"/>
+    <TextView
+        android:id="@+id/star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/belowline"
+        android:drawableLeft="@drawable/ic_star_half_blue_24dp"
+        android:text="3.5 star"
+        android:textSize="17dp"
+        android:textColor="#000000"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:clickable="false"
+        android:focusable="false"/>
+</RelativeLayout>

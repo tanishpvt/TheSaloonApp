@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/abhaya_libre</item>
+        <item>@font/allan</item>
+        <item>@font/amarante</item>
+        <item>@font/artifika</item>
+        <item>@font/atomic_age</item>
+        <item>@font/caveat_brush</item>
+    </array>
+</resources>

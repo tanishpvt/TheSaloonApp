@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_ownerhome"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_ownerappointment"
+            android:icon="@drawable/ic_event_note_black_24dp"
+            android:title="@string/my_appointment" />
+        <item
+            android:id="@+id/nav_ownerprofile"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="@string/profile" />
+        <item
+            android:id="@+id/nav_myrate"
+            android:icon="@drawable/ic_content_cut_black_24dp"
+            android:title="Rate Chart"/>
+    </group>
+
+    <item android:title="App">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_menu_share"
+                    android:fontFamily="casual"
+                    android:title="Share Us" />
+                <item
+                    android:id="@+id/nav_rate"
+                    android:icon="@drawable/ic_info_outline_black_24dp"
+                    android:fontFamily="casual"
+                    android:title="About Us" />
+
+            </group>
+        </menu>
+    </item>
+    <item android:title="Account">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/changePWD"
+                    android:icon="@drawable/ic_mode_edit_black_24dp"
+                    android:fontFamily="casual"
+                    android:title="@string/change_password"/>
+                <item
+                    android:id="@+id/logout"
+                    android:icon="@drawable/ic_lock_black_24dp"
+                    android:fontFamily="casual"
+                    android:title="Log Out"/>
+
+            </group>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Booking"
+    tools:showIn="@layout/activity_booking">
+
+    <TextView
+
+        android:id="@+id/ShowBooking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/caveat_brush"
+        android:text="Make a booking"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:id="@+id/bookingss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/artifika"
+        android:text="Please select Date ,Time and Location to proceed\n Further."
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textSize="13dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Date"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ShowBooking"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="75dp"
+        android:background="#000"
+        android:fontFamily="sans-serif-medium"
+        android:padding="6dp"
+        android:text="Date"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/Time"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Date"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="#000"
+        android:fontFamily="@font/atomic_age"
+        android:padding="6dp"
+        android:text="Time"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/locationheading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Time"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_text2"
+        android:drawableLeft="@drawable/ic_location_on_black_24dp"
+        android:fontFamily="@font/atomic_age"
+        android:padding="4dp"
+        android:text="Place"
+        android:textColor="#000"
+        android:textSize="14dp" />
+
+    <TextView
+
+
+        android:id="@+id/locationdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/locationheading"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text2"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_add_location_black_24dp"
+        android:fontFamily="@font/atomic_age"
+        android:onClick="Location"
+        android:padding="10dp"
+        android:text="Location"
+        android:textColor="#000"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/locationdata"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="#000"
+        android:onClick="SaloonList"
+        android:padding="5dp"
+        android:text="Next"
+        android:textAlignment="center"
+        android:textColor="#eee"
+        android:textSize="16dp" />
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <TextView
+        android:id="@+id/textappointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  Your Appointments"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="18dp"/>
+    <TextView
+        android:id="@+id/NodataCustomer"
+        android:layout_below="@id/textappointment"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="280dp"
+        android:text="                     No Appointment To Display"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ListView
+        android:id="@+id/Customerlist"
+        android:layout_below="@id/textappointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:scrollbars="none"
+        android:divider="@null"
+        android:dividerHeight="10dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"/>
+</RelativeLayout>

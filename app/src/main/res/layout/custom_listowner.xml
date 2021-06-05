@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:id="@+id/list_top"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/sa2" />
+        <TextView
+            android:id="@+id/customername"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="17dp"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:text="Tanish Mohanty"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+    <View
+        android:id="@+id/line"
+        android:layout_below="@id/list_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginHorizontal="8dp"
+        android:background="#c2c0c0"/>
+    <TextView
+        android:id="@+id/slot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="BOOKED ON"
+        android:textSize="12dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/line"/>
+    <TextView
+        android:id="@+id/slotdisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/slot"
+        android:text="5 SEP 2019 at 7.30 PM"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:layout_marginLeft="10dp" />
+    <TextView
+        android:id="@+id/scheduling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="SCHEDULED ON"
+        android:textSize="12dp"
+        android:layout_below="@id/slotdisplay"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/scheduledisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scheduling"
+        android:layout_marginLeft="10dp"
+        android:text="5 SEP 2019 at 7.30 PM"
+        android:textSize="15dp"
+        android:textColor="#000000" />
+    <View
+        android:id="@+id/belowline"
+        android:layout_below="@id/scheduledisplay"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="7dp"
+        android:background="#c2c0c0"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/payment"
+        android:layout_below="@id/belowline">
+        <TextView
+        android:id="@+id/ContactCustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Contact Details : "
+        android:textSize="14dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/ContactCustomerNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1234567890"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"/>
+    </LinearLayout>
+</RelativeLayout>
