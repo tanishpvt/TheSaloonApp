@@ -1,4 +1,4 @@
-# The Saloon App
+# The Saloon Application
 
 Features<br/>
 
